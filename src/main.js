@@ -7,7 +7,7 @@ import axios from 'axios'
 
 Vue.config.productionTip = false
 
-axios.defaults.baseURL = 'http://localhost:8000' || 'http://django-exam.std-1288.ist.mospolytech.ru/'
+axios.defaults.baseURL = 'http://localhost:8000' || 'https://ortamfag.pythonanywhere.com/'
 
 new Vue({
 	router,
