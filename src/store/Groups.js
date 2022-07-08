@@ -31,7 +31,7 @@ const Groups = {
 				const { orderingQuery } = payload
 
 				const res = await axios(
-					`/api/321${orderingQuery ? '?ordering=' + orderingQuery : ''}`
+					`/api/group${orderingQuery ? '?ordering=' + orderingQuery : ''}`
 				)
 
 				commit('setActiveItems', res.data.results)
@@ -44,7 +44,7 @@ const Groups = {
 		async addCategory({ commit, state }, payload) {
 			try {
 				const res = await axios.post(
-					`/api/321/`,
+					`/api/group/`,
 					{
 						...payload
 					}
